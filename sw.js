@@ -1,5 +1,5 @@
-const CACHE = 'safety-professional-suite-v1';
-const APP_SHELL = ['/', '/manifest.webmanifest', '/icons/icon-192.png', '/icons/icon-512.png'];
+const CACHE = 'safety-professional-suite-v3-full-suite';
+const APP_SHELL = ['/', '/brand-board.png', '/manifest.webmanifest', '/icons/icon-192.png', '/icons/icon-512.png'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(APP_SHELL)));
